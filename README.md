@@ -10,13 +10,13 @@ author: kk4201@126.com
 
 Based on NestJS
 
-The package path is _packages\backend_, the main business modules are in **packages\backend\src\modules**
+The package path is _packages\backend_, the config file is _packages\backend\config.js_, the main business modules are in **packages\backend\src\modules**
 
 ### Frontend
 
 Based on Vite + Vue3 + Pinia
 
-The package path is _packages\frontend_, the main business modules are in **packages\frontend\src\components**
+The package path is _packages\frontend_, the config files are in _packages\frontend\config_, the main business modules are in **packages\frontend\src\components**
 
 ## Getting Started
 
@@ -72,7 +72,10 @@ pnpm dev:all
 ```
 
 Open the follow url in your browser:
-http://localhost:7000/app
+
+API doc: http://localhost:8000/doc
+
+App: http://localhost:7000/app
 
 ### Run your tests
 
