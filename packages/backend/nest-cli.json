@@ -1,0 +1,48 @@
+{
+    "collection": "@nestjs/schematics",
+    "monorepo": true,
+    "root": "./",
+    "sourceRoot": "./src",
+    "compilerOptions": {
+        "typeCheck": false,
+        "webpackConfigPath": "./webpack.config.ts",
+        "tsConfigPath": "./tsconfig.json",
+        "plugins": ["@nestjs/swagger"]
+    },
+    "generateOptions": {
+        "spec": false,
+        "flat": true
+    },
+    "projects": {
+        "app": {
+            "type": "application",
+            "root": "./",
+            "entryFile": "main",
+            "sourceRoot": "./src",
+            "compilerOptions": {
+                "tsConfigPath": "./tsconfig.json"
+            }
+        },
+        "doc": {
+            "type": "application",
+            "root": "./",
+            "sourceRoot": "./src",
+            "entryFile": "doc",
+            "compilerOptions": {
+                "deleteOutputPath": true,
+                "webpack": false,
+                "builder": "tsc",
+                "typeCheck": false,
+                "tsConfigPath": "./tsconfig.json",
+                "plugins": [
+                    {
+                        "name": "@nestjs/swagger",
+                        "options": {
+                            "introspectComments": true
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

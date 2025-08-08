@@ -1,0 +1,288 @@
+@import url('./element.less');
+@import url('./naive.less');
+@import url('./colors.less');
+
+a {
+    color: #409eff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.el-table {
+    ul {
+        margin-left: 0;
+
+        > li {
+            list-style: none;
+        }
+    }
+}
+
+ol {
+    margin-left: auto;
+
+    > li {
+        list-style: auto;
+    }
+}
+
+label,
+.label {
+    // color: #888;
+    white-space: nowrap;
+    // margin-right: 0.5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 0 0 1rem;
+    // margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.margin-vertical {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.margin-horizontal {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-half {
+    margin: 0.5rem;
+}
+
+.margin-vertical-half {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.margin-horizontal-half {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.margin-top-half {
+    margin-top: 0.5rem;
+}
+
+.margin-bottom-half {
+    margin-bottom: 0.5rem;
+}
+
+.margin-left-half {
+    margin-left: 0.5rem;
+}
+
+.margin-right-half {
+    margin-right: 0.5rem;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.pre {
+    white-space: pre;
+}
+
+.pre-line {
+    white-space: pre-line;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col,
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+}
+
+.flex-space-between {
+    .flex;
+
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.editable {
+    cursor: pointer;
+}
+
+.inline-list {
+    display: flex;
+
+    .item + .item {
+        margin-left: 0.75rem;
+    }
+
+    .item {
+        label {
+            color: #888;
+        }
+    }
+}
+
+.tag-list {
+    .tag {
+        padding: 0 6px;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        margin: 4px 0;
+        background-color: #f8fbff;
+        list-style: none;
+    }
+
+    // .tag + .tag {
+    //     margin-top: 8px;
+    // }
+}
+
+.table-list {
+    .status {
+        display: flex;
+        align-items: center;
+
+        .dot {
+            position: relative;
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+
+            .inner-dot {
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            .outer-dot {
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 50%;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            &.review {
+                .inner-dot {
+                    background-color: #2667ff;
+                }
+
+                .outer-dot {
+                    background-color: rgb(38 103 255 / 20%);
+                }
+            }
+
+            &.success {
+                .inner-dot {
+                    background-color: #29a634;
+                }
+
+                .outer-dot {
+                    background-color: rgb(41 166 52 / 20%);
+                }
+            }
+
+            &.fail {
+                .inner-dot {
+                    background-color: #f02d3a;
+                }
+
+                .outer-dot {
+                    background-color: rgb(240 45 58 / 20%);
+                }
+            }
+
+            &.cancel {
+                .inner-dot {
+                    background-color: #9ea7bd;
+                }
+
+                .outer-dot {
+                    background-color: rgb(158 167 189 / 20%);
+                }
+            }
+
+            &.warning {
+                .inner-dot {
+                    background-color: #f80;
+                }
+
+                .outer-dot {
+                    background-color: rgb(255 136 0 / 20%);
+                }
+            }
+        }
+    }
+}
+
+.grab {
+    cursor: grab !important;
+}
+
+.grabbing {
+    cursor: grabbing !important;
+}
+
+.large-icon {
+    font-size: 32px;
+}

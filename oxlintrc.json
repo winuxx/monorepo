@@ -1,0 +1,24 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "env": {
+        "node": true
+    },
+    "plugins": [],
+    "rules": {
+        "semi": ["error", "never"],
+        "camelcase": "error",
+        "no-console": "off",
+        "no-debugger": "off",
+        "no-empty": ["error", { "allowEmptyCatch": true }],
+        "no-empty-file": "off",
+        "unicorn/no-empty-file": "off",
+        "no-shadow": "error",
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "eqeqeq": ["error", "always", { "null": "never" }],
+        "prefer-const": ["error", { "destructuring": "all" }],
+        "spaced-comment": ["error", "always"],
+        "require-await": "warn"
+    },
+    "overrides": []
+}

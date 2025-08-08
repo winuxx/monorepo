@@ -1,0 +1,69 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ESNext",
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ],
+        "skipLibCheck": true,
+        // "useDefineForClassFields": true,
+        /* Bundler mode */
+        "moduleResolution": "Node", // should use "node", or will cause errors: Module ""element-plus"" has no exported member "ElMessage"
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "preserve",
+        /* Linting */
+        "strict": false,
+        "allowJs": true,
+        // "checkJs": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": false,
+        /* Others */
+        "importHelpers": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": false,
+        "incremental": true,
+        // "tsBuildInfoFile":".tsbuildinfo",
+        "types": [
+            // "mocha",
+            // "chai",
+            "vite/client"
+        ],
+        "rootDir": ".",
+        "baseUrl": ".",
+        "outDir": "."
+        // note: paths 根据打包对象自动生成
+        // "paths": {
+        //     "@/*": ["packages/main/src/*"],
+        //     "~/*": ["./*"],
+        // },
+    },
+    "include": [
+        "components/*/*/config/**/*.ts",
+        "components/*/*/src/**/*.d.ts",
+        "components/*/*/src/**/*.ts",
+        "components/*/*/src/**/*.tsx",
+        "components/*/*/src/**/*.vue",
+        "components/*/*/src/App.vue",
+        "packages/*/auto-import.d.ts",
+        "packages/*/components.d.ts",
+        "packages/*/config/**/*.ts",
+        "packages/*/src/**/*.d.ts",
+        "packages/*/src/**/*.ts",
+        "packages/*/src/**/*.tsx",
+        "packages/*/src/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules/**",
+        "packages/*/public/**" // static files
+    ],
+}

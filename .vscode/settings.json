@@ -1,0 +1,33 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "dist": true
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, oxlintrc*, stylelint*, .prettier*, prettier*, .editorconfig"
+    },
+    "editor.fontLigatures": true,
+    "editor.tabSize": 4,
+    "editor.rulers": [
+        120
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier to format files
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "never",
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
+    },
+    "editor.inlineSuggest.showToolbar": "always",
+    "stylelint.validate": [
+        "css",
+        "less",
+        "scss",
+        "vue",
+        "html"
+    ], // stylelint校验的文件格式
+    "typescript.tsdk": "node_modules/typescript/lib" // Use the project's typescript version
+}
