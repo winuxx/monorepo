@@ -8,11 +8,13 @@ author: kk4201@126.com
 
 ### Backend
 
-Based on NestJS.
+Based on NestJS
 
 The package path is _packages\backend_, the main business modules are in **packages\backend\src\modules**
 
 ### Frontend
+
+Based on Vite + Vue3 + Pinia
 
 The package path is _packages\frontend_, the main business modules are in **packages\frontend\src\components**
 
