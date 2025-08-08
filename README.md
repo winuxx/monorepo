@@ -69,6 +69,9 @@ Start all in one command
 pnpm dev:all
 ```
 
+Open the follow url in your browser:
+http://localhost:7000/app
+
 ### Run your tests
 
 TODO
